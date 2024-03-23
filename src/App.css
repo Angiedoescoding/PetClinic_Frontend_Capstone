@@ -140,3 +140,66 @@ li {
 .goodDeedsParDiv {
   font-size: 10px;
 }
+
+
+
+/* Footer */
+
+.footer {
+  background-color: #a7cfc0ae; 
+  color: #fff; 
+  padding: 7px 0;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.footerContainer {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.schedule, .addressContacts, .subscribeForm {
+  flex: 1;
+}
+
+.schedule, .subscribeForm, .addressContacts {
+  color: rgb(5, 5, 128);
+  font-size: 12px;
+}
+
+.copyright{
+  text-align: end;
+  font-size: 12px;
+}
+
+.subscribeForm form {
+  display: flex;
+}
+
+.subscribeForm input[type="email"] {
+  flex: 1;
+  padding: 6px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribeForm button {
+  padding: 8px 20px;
+  background-color: #f4f3ba; 
+  color: #333; 
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribeForm button:hover {
+  background-color: #7fc27dd7; 
+}
