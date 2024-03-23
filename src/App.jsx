@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <div>
-      <GreetingMain />
       <Navbar />
+      <GreetingMain />
                 <Routes>
                     {/* <Route path="/" element={<GreetingMain />} /> */}
                     <Route path="/about" element={<About />} />
