@@ -15,19 +15,8 @@ import Footer from './components/Footer'
 
 function App() {
   
-  // trying to connect the backend (video example), also check the package.json "proxy": "http://localhost:3000",
+  // trying to connect the backend here (see Dylan's example)
   
-  // const [backendData, setBackendData] = useState([{}])
-
-  // useEffect(() => {
-  //   fetch("/api").then(
-  //     response => response.json()
-  //   ).then(
-  //     data => {
-  //       setBackendData(data)
-  //     }
-  //   )
-  // }, [])
 
   return (
     <>
@@ -42,19 +31,10 @@ function App() {
                     <Route path="/good-deeds" element={<GoodDeeds />} />
                 </Routes>
       {/* <img src={Rabbits} />   testing adding a picture - works */}
-                <Footer />
+      <Footer />
       </div>
 
-      {/* // trying to connect the backend (video example), also check the package.json "proxy": "http://localhost:3000",
-      {(typeof backendData.users === 'undefined') ? (
-        <p>Loading - test on the App.jsx return for BACKEND SERVER. If you see this, then your are having errors with backend connections.</p>
-      ) : (
-        backendData.users.map((user, i) => (
-          <p key={i}>{user}</p>
-        ))
-      )} */}
-
-
+      
 
 
     </>
