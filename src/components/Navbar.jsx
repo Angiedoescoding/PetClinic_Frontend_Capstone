@@ -8,7 +8,7 @@ import { sections } from "./Content";
 
 
 const Navbar = () => {
-    const [activeSection, setActiveSection] = useState("html");
+    const [activeSection, setActiveSection] = useState("about"); // set about instead of html for now
     const [timeOfLastClick, setTimeOfLastClick] = useState(0); // we need to keep track of this to disable the observer temporarily when user clicks on a link
 
     const handleClick = (id) => {
@@ -27,7 +27,7 @@ const Navbar = () => {
             {sections.map((link) => (
                 <li key={link.id}>
                 <Link
-                    to={`#${link.id}`}
+                    to={`/${link.id}`}
                     onClick={() => {
                     setTimeOfLastClick(Date.now());
                     // setActiveSection(link.id);

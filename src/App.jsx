@@ -21,9 +21,10 @@ function App() {
   return (
     <>
       <div>
+      <GreetingMain />
       <Navbar />
                 <Routes>
-                    <Route path="/" element={<GreetingMain />} />
+                    {/* <Route path="/" element={<GreetingMain />} /> */}
                     <Route path="/about" element={<About />} />
                     <Route path="/doctors" element={<Doctors />} />
                     <Route path="/services" element={<Services />} />

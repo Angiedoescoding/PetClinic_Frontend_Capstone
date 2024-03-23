@@ -2,7 +2,7 @@ import React from 'react'
 
 function GoodDeeds() {
   return (
-    <div>GoodDeeds</div>
+    <div>GoodDeeds - ADD API</div>
   )
 }
 

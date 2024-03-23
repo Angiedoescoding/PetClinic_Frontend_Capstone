@@ -8,9 +8,10 @@ function GreetingMain() {
         <div className="greeting">
             {/* <img src={} alt="Pets" /> */}
             <h1>Welcome to the "Paws and Claws" veterinary clinic!</h1>
-            <p>Brief introduction text about the clinic</p>
-            <p>**Our Motto:** _Clinic's Motto_</p>
-
+            {/* <p>Brief introduction text about the clinic</p> */}
+            <br />
+            <h3>We do our best in empowering pets to live their best lives!</h3>
+            <br />
             </div>
     </div>
   )
