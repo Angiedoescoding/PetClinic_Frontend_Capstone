@@ -34,31 +34,25 @@ body {
   margin: 0;
 }
 
-.container {
-  max-width: 1200px; 
-  margin: 0 auto;
-  padding: 0 20px;
-  border: 1px solid rgb(134, 131, 151);
-  border-radius: 10px;
-}
+/* .navContainer  */
+  /* max-width: 1200px;  */
+  /* margin: 0 auto; */
+
 
 .navbar {
   position: fixed;
   z-index: 1000;
-  /* top: 0;
-  left: 0; */
   width: 100%;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 25px 15px; 
+  /* left: 50%;
+  transform: translateX(-50%); */
+  padding: 25px; 
   background-color: #cdf1e4; 
   backdrop-filter: blur(100px); 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 23px; 
-  border-radius: 10px;
 }
 
 .navLinkStyle {
@@ -76,10 +70,10 @@ body {
 /* .navContacts {} */
 
 .phoneLink {
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none;
   background-color: #f4f3ba; 
-  padding: 8px;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
   margin-left: 10px;
   color: rgb(5, 5, 128);
@@ -291,15 +285,39 @@ body {
   background-color: #218838;
 }
 
-.aboutImgContainer img {
+.aboutImgContainer, img {
   width: 100%;
-  height: auto;
+  height: 70vh;
+  /* height: 100vh; */
   display: block; 
 }
 
+/* Doctors */
 
+.doctorsListContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
 
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
 
+.doctor {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.vetDogImg {
+  width: 500px; 
+  height: auto;
+}
 
 /* Media queries for responsiveness */
 

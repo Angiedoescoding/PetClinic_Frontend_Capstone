@@ -8,7 +8,7 @@ import Doctors from './components/Doctors';
 import Services from './components/Services';
 import ThingsToKnow from './components/ThingsToKnow';
 import GoodDeeds from './components/GoodDeeds';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 // import Rabbits from './assets/Rabbits.jpg'  testing adding a picture - works
 
@@ -20,7 +20,6 @@ function App() {
 
   return (
     <>
-      <div>
       <Navbar />
       <GreetingMain />
                 <Routes>
@@ -33,10 +32,6 @@ function App() {
                 </Routes>
       {/* <img src={Rabbits} />   testing adding a picture - works */}
       <Footer />
-      </div>
-
-      
-
 
     </>
   )
