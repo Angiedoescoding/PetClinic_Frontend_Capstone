@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect, useState } from 'react'
 import Vetdog from '../assets/Vetdog.jpg'
 

@@ -295,8 +295,9 @@ body {
 /* Doctors */
 
 .doctorsListContainer {
-  padding: 20px;
+  padding: 20px 100px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   /* align-items: center; */
 }
@@ -304,20 +305,43 @@ body {
 .doctors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px; 
+
 }
 
 .doctor {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  flex-wrap: wrap;
+  /* height: 46vh; */
 }
 
 .vetDogImg {
+  width: 450px; 
+  height: auto;
+}
+
+
+/* Services */
+
+.vetWithPets {
   width: 500px; 
   height: auto;
 }
+
+.servicesListContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 100px;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  /* max-width: fit-content; */
+}
+
 
 /* Media queries for responsiveness */
 
