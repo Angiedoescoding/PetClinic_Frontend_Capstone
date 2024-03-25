@@ -1,7 +1,7 @@
 # Front-end of "Paws and Claws" Veterinary Clinic 
 
 <p>Paws and Claws is a web application built with React (using Vite technology) for a veterinary clinic (as a part of the school project). It allows users to view information about the clinic's doctors, services, and animal care resources. The application also provides a modal for booking appointments.</p>
-<p>The information about the clinic's doctors and services is fetched from [this file] (https://github.com/Angiedoescoding/PetClinic_Backend_Capstone). </p>
+<p>The information about the clinic's doctors and services is fetched from [this file](https://github.com/Angiedoescoding/PetClinic_Backend_Capstone). </p>
 
 <hr>
 
@@ -44,8 +44,8 @@
 
 #### Resources
 <ul>
-    <li>React npm packages: [CLI commands] (https://docs.npmjs.com/cli/v10/commands)</li>
-    <li>Pictures: [Unsplash] (https://unsplash.com/)</li>
+    <li>React npm packages: [CLI commands](https://docs.npmjs.com/cli/v10/commands)</li>
+    <li>Pictures: [Unsplash](https://unsplash.com/)</li>
     <li>React Router: Library for handling client-side routing in React applications</li>
     <li>Axios: Promise-based HTTP client for making API requests</li>
     <li>React Hook Form: Library for managing form state and validation in React</li>
