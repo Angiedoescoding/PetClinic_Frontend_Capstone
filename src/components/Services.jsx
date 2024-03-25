@@ -36,7 +36,9 @@ function Services() {
         </div>
       )
     }) : null}
-    
+
+            <button className="appointmentBtnServ">Book an appointment</button>
+
     </div>
     </>  
     )

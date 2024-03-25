@@ -1,40 +1,45 @@
 import axios from 'axios';
-import { createContext, useContext, useMemo } from 'react';
 
-const AppContext = createContext();
+function ServerAuth() {
 
-export const fetchDoctors = ({ children }) => {
+    const apiKey = "my-api-key";
+    const orgID = "your-organization-id";
+    const apiEndpoint = `https://test1-api.rescuegroups.org/v5/public/animals/search/available?orgID=${orgID}`;
 
-    const vets = async (formData) => {
-        let res = await axios({
-            method: 'POST',
-            url: 'http://localhost:3000/vets',
-            data: formData,
-        });
-    };
+    fetch(apiEndpoint, {
+    method: "GET",
+    headers: {
+        Authorization: apiKey,
+        "Content-Type": "application/json",
+    },
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.error(err));
 
-    const services = async (formData) => {
-        let res = await axios({
-            method: 'POST',
-            url: 'http://localhost:3000/services',
-            data: formData,
-        });
-    };
 
-    const value = useMemo(
-        () => ({
-            vets,
-            services,
-        }), []);
 
-            
-        return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+    return (
+    <div>ServerAuth. 
+        <p>_place data here_</p>
 
-    
-};
 
-export const useVetsList = () => {
-    return useContext(AppContext);
-};
+        ---- API Resourses:
 
-// unsure if this is correct file and if I need it in general since I have Doctors component fetching data successfully. CHECK WITH DYLAN
+    -- https://api.rescuegroups.org/v5/public/docs // no API keys provided for now, pending for the devs team to reply
+    </div>
+    )
+}
+
+export default ServerAuth
+
+
+// Let's break this code down. First, we defined our API key and the organization ID we want to retrieve the data for. Then, we constructed the API endpoint with the endpoint path and the organization ID. Finally, we used the fetch API to make a GET request to the endpoint and included the API key in the Authorization header.
+
+// In the then statements, we convert the response from JSON to JavaScript Object format and log it to the console. We also added a catch statement to log any errors that may occur.
+
+
+
+        {/* API Resourses:
+
+    -- https://api.rescuegroups.org/v5/public/docs // no API keys provided for now, pending for the devs team to reply */}

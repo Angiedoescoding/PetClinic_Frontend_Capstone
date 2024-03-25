@@ -81,92 +81,12 @@ body {
 
 
 
-
-/* .navbar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px; 
-  font-weight: 500; 
-  list-style-type: none;
-  padding: 0;
-} */
-
-/* .navbar ul li {
-  display: inline-block;
-  margin-right: 20px;
-} */
-
-/* .navbar ul li a {
-  position: relative;
-  font-size: 16px; 
-  padding: 8px 12px; 
-  margin: 0 8px; 
-  text-decoration: none;
-  color: rgb(10, 56, 163); 
-} */
-
-/* .navbar ul li a:hover {
-  text-decoration: none;
-  font-size: 16px; 
-  border-radius: 5%;
-} */
-
-/* .navbar ul li a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
-} */
-
-
-
-/* SectionNav style */
-
-/* .section {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: start; */
-  /* align-items: center; */
-  /* text-align: center;
-  border: 1px solid rgb(134, 131, 151);
-  border-radius: 10px;
-  margin-top: 30px;
-} */
-
-/* .section h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 2rem; 
-}
-
-.section p {
-  font-size: 1.3rem; 
-  font-weight: medium;
-  text-align: start;
-  margin-left: 10px;
-  margin-right: 10px;
-} */
-
-
-
 /* Greeting component */
 
 .greeting {
   margin-top: 120px;
   text-align: center;
 }
-
-/* Content component */
-
-/* .goodDeedsParDiv {
-  font-size: 10px;
-} */
-
 
 
 /* Footer */
@@ -177,7 +97,7 @@ body {
   padding: 7px 0;
   border-radius: 10px;
   margin-top: 10px;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -288,9 +208,10 @@ body {
 .aboutImgContainer, img {
   width: 100%;
   height: 70vh;
-  /* height: 100vh; */
+  height: 80vh;
   display: block; 
 }
+
 
 /* Doctors */
 
@@ -341,6 +262,147 @@ body {
   flex-direction: column;
   /* max-width: fit-content; */
 }
+
+.appointmentBtnServ{
+  padding: 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 200px;
+  width: 200px;
+  align-self: center;
+}
+
+.appointmentBtnServ:hover {
+  background-color: #218838;
+}
+
+
+/* GoodDeeds */
+
+.goodDeedsParDiv {
+  padding: 20px 100px;
+  font-size: 20px;
+}
+
+.h1GoodDeeds {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.h4GoodDeeds {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+
+.h3GoodDeeds {
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.pGoodDeeds {
+  line-height: 25px;
+  margin: 0;
+  color: #ffffff;
+  background-color: #5454544b;
+}
+
+.containerGoodDeeds {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  overflow:hidden;
+}
+
+.item {
+  width: calc(94%/3);
+  margin: 1%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.item img {
+  max-width: 650px;
+  height: 350px;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.text2 {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  top: 42%;
+  cursor: pointer;
+  padding-left: 50px;
+}
+.e2 img {
+  transition: all 0.4s ease;
+}
+.line{
+  position:absolute;
+  width: 0px;
+  height: 0px;
+  transition: all 0.5s ease;
+  background: #ffffff;
+}
+
+.top{
+  top:10%;
+  left:50%;
+}
+
+.bottom{
+  bottom:10%;
+  left:50%;
+}
+
+.left{
+  top:50%;
+  left:10%;
+}
+
+.right{
+  top:50%;
+  right:10%;
+}
+
+.e2:hover img {
+  -webkit-filter: brightness(.6);
+}
+
+.e2:hover .top{
+  left:10%;
+  width: 80%;
+  height: 1px;
+}
+
+.e2:hover .bottom{
+  left:10%;
+  width: 80%;
+  height: 1px;
+}
+
+.e2:hover .left{
+  top:10%;
+  width: 1px;
+  height: 80%;
+}
+
+.e2:hover .right{
+  top:10%;
+  width: 1px;
+  height: 80%;
+}
+
+
 
 
 /* Media queries for responsiveness */
