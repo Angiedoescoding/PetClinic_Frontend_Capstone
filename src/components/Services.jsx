@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import Dogandcatwithavet from '../assets/Dogandcatwithavet.jpg'
+import Modal from './Modal';
 
 function Services() {
 
   const [services, setServices] = useState();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     console.log("Fetching services...");
@@ -22,24 +23,33 @@ function Services() {
     })
   },[])
 
+
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
+
   return (
     <>
     <div className='servicesListContainer'>
     
-    <h1 style={{ color: 'rgb(5, 5, 128)' }}>Services we provide:</h1>
-    {services ? services.map((service) => {
-      return (
-        <div className='serviceList'>
-          <h4 style={{ color: 'green' }}>{service.name}: {service.description}</h4>
-          <p>Cost per procedure: ${service.price}</p>
-          {/* <hr></hr> */}
-        </div>
-      )
-    }) : null}
+      <h1 style={{ color: 'rgb(5, 5, 128)' }}>Services we provide:</h1>
+      {services ? services.map((service) => {
+        return (
+          <div className='serviceList'>
+            <h4 style={{ color: 'green' }}>{service.name}: {service.description}</h4>
+            <p>Cost per procedure: ${service.price}</p>
+            {/* <hr></hr> */}
+          </div>
+        )
+      }) : null}
 
-            <button className="appointmentBtnServ">Book an appointment</button>
-
+      <button className="appointmentBtnServ" onClick={openModal}>Book an appointment</button>
     </div>
+      {isModalOpen && <Modal isOpen={isModalOpen} onClose={closeModal} services={services} />}
     </>  
     )
 }
