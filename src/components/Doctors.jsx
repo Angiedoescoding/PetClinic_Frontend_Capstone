@@ -31,7 +31,7 @@ function Doctors() {
         {vets ? vets.map((vet) => {
           return (
           <div className='doctor'>
-            <h4>{vet.firstName} {vet.lastName} - {vet.specialties}</h4>
+            <h4>{vet.firstName} {vet.lastName} - {vet.specialties.join(', ')}</h4>
             {/* <p style={{ color: 'green' }}>{vet.specialties}</p> */}
             <img src={Vetdog} alt="Vet with a dog" className="vetDogImg" />
           </div>
