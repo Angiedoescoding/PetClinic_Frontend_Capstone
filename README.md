@@ -24,6 +24,8 @@ The information about the clinic's doctors and services is fetched from [this fi
     <li>Axios: Promise-based HTTP client for making API requests</li>
     <li>React Hook Form: Library for managing form state and validation in React</li>
     <li>React Datepicker: A simple and reusable datepicker component for React</li>
+    <li>React Framer Motion: An open source motion library for React, made by Framer</li>
+    <li>React Datepicker: A simple and reusable datepicker component for React</li>
 </ul>
 
 
@@ -45,11 +47,7 @@ The information about the clinic's doctors and services is fetched from [this fi
 #### Resources
 - React npm packages: [CLI commands](https://docs.npmjs.com/cli/v10/commands)
 - Pictures: [Unsplash](https://unsplash.com/)
-- React Router: Library for handling client-side routing in React applications
-- Axios: Promise-based HTTP client for making API requests
-- React Hook Form: Library for managing form state and validation in React
-- React Datepicker: A simple and reusable datepicker component for React
-
+- [Stack Overflow forum](https://stackoverflow.com)
 
 <p>* All all names, services, and prices listed in this project are entirely fictional and were created solely for the purpose of this school project. Any resemblance to real individuals, businesses, or pricing structures is purely coincidental.</p>
 <br>
