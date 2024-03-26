@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Modal from './Modal'
 
-function Navbar() {
+function Navbar({services}) {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -34,7 +34,7 @@ function Navbar() {
                     </div>
                 </nav>
             </div>
-        {isModalOpen && <Modal isOpen={isModalOpen} onClose={closeModal}  />}
+        {isModalOpen && <Modal isOpen={isModalOpen} onClose={closeModal} services={services} />}
 
     </header>
     )

@@ -66,7 +66,7 @@ function GoodDeeds() {
           </Link>
           <div className="text2">
             <h3 className='h3GoodDeeds'>ASPCA</h3>
-            <p className='pGoodDeeds'>Adopting a pet in the New York City, Los Angeles, Asheville or Columbus area? The ASPCA’s wonderful adoptable dogs and cats are waiting for you right now!</p>
+            <p className='pGoodDeeds'>Adopting a pet in the New York City, Los Angeles, Asheville or Columbus area. The ASPCA’s wonderful adoptable dogs and cats are waiting for you right now!</p>
         </div>
         <div className="line top"></div>
         <div className="line bottom"></div>

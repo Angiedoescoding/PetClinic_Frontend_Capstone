@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import Modal from './Modal';
 
-function Services() {
+function Services({services, setServices}) {
 
-  const [services, setServices] = useState();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {

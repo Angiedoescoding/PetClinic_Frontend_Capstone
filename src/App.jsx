@@ -10,27 +10,24 @@ import ThingsToKnow from './components/ThingsToKnow';
 import GoodDeeds from './components/GoodDeeds';
 import Footer from './components/Footer';
 
-// import Rabbits from './assets/Rabbits.jpg'  testing adding a picture - works
 
 
 function App() {
   
-  // trying to connect the backend here (see Dylan's example)
-  
+  const [services, setServices] = useState();
+
 
   return (
     <>
-      <Navbar />
+      <Navbar services={services}  />
       <GreetingMain />
                 <Routes>
-                    {/* <Route path="/" element={<GreetingMain />} /> */}
                     <Route path="/about" element={<About />} />
                     <Route path="/doctors" element={<Doctors />} />
-                    <Route path="/services" element={<Services />} />
+                    <Route path="/services" element={<Services services={services} setServices={setServices}/>} />
                     <Route path="/things-to-know" element={<ThingsToKnow />} />
                     <Route path="/good-deeds" element={<GoodDeeds />} />
                 </Routes>
-      {/* <img src={Rabbits} />   testing adding a picture - works */}
       <Footer />
 
     </>

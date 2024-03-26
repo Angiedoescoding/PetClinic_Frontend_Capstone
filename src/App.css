@@ -1,13 +1,5 @@
 /* This file contains CSS styles specific to the App.jsx component or its child components. */
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
-
 
 /* Navbar styling */
 
@@ -35,11 +27,6 @@ body {
   color: #333;
 }
 
-/* .navContainer  */
-  /* max-width: 1200px;  */
-  /* margin: 0 auto; */
-
-
 .navbar {
   position: fixed;
   z-index: 1000;
@@ -65,10 +52,6 @@ body {
 .navLinkStyle:hover {
   color: #fff; 
 }
-
-.navHeader 
-
-/* .navContacts {} */
 
 .phoneLink {
   font-size: 12px;
@@ -190,7 +173,6 @@ body {
 
 .subtitleAbout2 {
   font-size: 1.5rem;
-
 }
 
 .appointmentBtn {
@@ -208,10 +190,10 @@ body {
 
 .aboutImgContainer, img {
   width: 100%;
-  height: 70vh;
   height: 80vh;
   display: block; 
 }
+
 
 
 /* Doctors */
@@ -292,7 +274,6 @@ body {
   text-align: center;
   margin-top: 50px;
   color: rgb(246, 40, 40);
-
 }
 
 .h4GoodDeeds {
@@ -483,9 +464,6 @@ form button:hover {
 
 .thingsToKnowMain {
   padding: 20px 100px;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
 }
 
 .thingsToKnowCards {
@@ -499,7 +477,7 @@ form button:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: calc(33.33% - 20px); /* Adjust width as needed */
+  width: calc(33.33% - 60px); 
 }
 
 .thingsCard h2 {
@@ -516,4 +494,189 @@ form button:hover {
 
 
 /* Media queries for responsiveness */
+
+/* Smaller screens (mobile) */
+@media (max-width: 800px) {
+
+  .navbar {
+    gap: 13px; 
+  }
+
+  .navLinkStyle {
+    font-size: 10px;
+  }
+
+  .phoneLink {
+    font-size: 9px;
+    padding: 5px;
+  }
+
+  .footer {
+    padding: 5px 0;
+    margin-top: 7px;
+  }
+
+  .footerContent {
+    font-size: 7px;
+  }
+  
+  .schedule, .subscribeForm, .addressContacts {
+    font-size: 10px;
+  }
+
+  .copyright{
+    font-size: 10px;
+  }
+
+  .subscribeForm input[type="email"] {
+    margin-right: 2px;
+    padding: 2px;
+  }
+
+  .subscribeForm button {
+    padding: 4px 8px;
+  }
+
+  .h1About{
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitleAbout{
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .subtitleAbout2 {
+    font-size: 11px;
+  }
+
+  .appointmentBtn {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .aboutImgContainer, img {
+    width: 100%;
+    height: 50vh;
+    display: block; 
+  }
+
+  .greeting h1{
+    font-size: 25px;
+  }
+
+  .greeting h3{
+    font-size: 17px;
+  }
+
+  .goodDeedsParDiv {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .h1GoodDeeds {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .h4GoodDeeds {
+    font-size: 15px;
+  }
+
+  .h3GoodDeeds {
+    line-height: 10px;
+    font-size: 12px;
+  }
+  
+  .pGoodDeeds {
+    margin-top: 5px;
+    font-size: 7px;
+    row-gap: normal;
+    line-height: 8px;
+  }
+
+  .containerGoodDeeds {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 1rem;
+  }
+
+  .item {
+    width: calc(87%/3);
+  }
+  
+  .item img {
+    max-width: auto;
+    height: 150px;
+  }
+
+  .text2 {
+    width: 70%;
+    top: 2%;
+    padding: 1rem;
+  }
+
+  .top{
+    top:5%;
+    left:50%;
+  }
+  
+  .bottom{
+    bottom:5%;
+    left:50%;
+  }
+  
+  .modal {
+  left: 45%;
+  padding: 10px;
+}
+
+  .modalContent {
+    width: 100%;
+  }
+
+  .formGroup {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  form button {
+    padding: 0.3rem 1rem;
+  }
+
+  .modalContent h2 {
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  .modalContent label {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .thingsToKnowMain {
+    padding: 20px;
+  }
+  
+  .thingsToKnowCards {
+    gap: 10px;
+  }
+  
+  .thingsCard {
+    padding: 15px;
+    width: calc(45.33% - 20px); 
+  }
+
+  .thingsCard h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .thingsCard p {
+    font-size: 11px;
+  }
+  
+
+}
 
