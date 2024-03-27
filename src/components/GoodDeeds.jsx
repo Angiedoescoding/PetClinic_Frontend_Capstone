@@ -6,6 +6,7 @@ import Homelesspuppies from '../assets/Homelesspuppies.jpg';
 import Catbehindbarbedwirefence from '../assets/Catbehindbarbedwirefence.jpg';
 import Husky from '../assets/Husky.jpg';
 import BlueParrots from '../assets/BlueParrots.jpg';
+import ServerAuth from '../service/ServerAuth';
 
 function GoodDeeds() {
   return (
@@ -19,9 +20,7 @@ function GoodDeeds() {
             Your donation can provide food, shelter, medical care, and rehabilitation for animals in need. It can support rescue missions, spaying and neutering programs, and educational initiatives aimed at preventing cruelty and promoting responsible pet ownership. Every dollar you give helps these organizations rescue, rehabilitate, and rehome animals, ensuring they have a second chance at life.
         </p>
 
-        {/* API Resourses:
 
-    -- https://api.rescuegroups.org/v5/public/docs // no API keys provided for now, pending for the devs team to reply */}
       </div>
       
       <h1 className='h1GoodDeeds'>Adopt. Don't shop.</h1>
@@ -118,10 +117,9 @@ function GoodDeeds() {
         <div className="line left"></div>
         <div className="line right"></div>
         </div>
-
-
       </div>
 
+    <ServerAuth />
 
 
     </div>

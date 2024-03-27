@@ -1,45 +1,59 @@
-import axios from 'axios';
+import { useEffect, useState } from 'react';
+// import dotenv from 'dotenv';
+// dotenv.config();
 
-function ServerAuth() {
+const ServerAuth = () => {
 
-    const apiKey = "my-api-key";
-    const orgID = "your-organization-id";
-    const apiEndpoint = `https://test1-api.rescuegroups.org/v5/public/animals/search/available?orgID=${orgID}`;
+    // const apiKey = REACT_APP_MY_RG_KEY; -- when I replace the actual key here with REACT_APP_MY_RG_KEY, I have troubles with fetching data in json and populating it ti the user
+    const apiKey = 'cebzAIkd';
+    const [animals, setAnimals] = useState([]);
 
-    fetch(apiEndpoint, {
-    method: "GET",
-    headers: {
-        Authorization: apiKey,
-        "Content-Type": "application/json",
-    },
-    })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.error(err));
-
-
+    useEffect(() => {
+        const fetchAnimals = async () => {
+            try {
+                const response = await fetch(
+                    'https://api.rescuegroups.org/v5/public/animals/search/available/cats/haspic/?sort=random&limit=3',
+                    {
+                        method: 'POST',
+                        headers: {
+                            Authorization: apiKey,
+                            'Content-Type': 'application/vnd.api+json',
+                        },
+                    }
+                    );
+            
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch animals');
+                    }
+            
+                    const data = await response.json();
+                    setAnimals(data.data);
+                } catch (error) {
+                    console.error('Error fetching animals:', error);
+            }
+        };
+    
+        fetchAnimals();
+    }, []);
+    
 
     return (
-    <div>ServerAuth. 
-        <p>_place data here_</p>
-
-
-        ---- API Resourses:
-
-    -- https://api.rescuegroups.org/v5/public/docs // no API keys provided for now, pending for the devs team to reply
+        <div className="apiFetch">
+            {/* <div dangerouslySetInnerHTML={{ __html: artwork.description }} /> */}
+            <h2>Available for Adoption Pets</h2>
+            <ul>
+                {animals.map((animal, index) => (
+                    <li key={index}>
+                        <h3>Name: {animal.attributes.name}</h3>
+                        <p >{animal.attributes.descriptionText}</p>
+                    </li>
+                ))}
+            </ul>
     </div>
-    )
-}
+);
+};
+
 
 export default ServerAuth
 
 
-// Let's break this code down. First, we defined our API key and the organization ID we want to retrieve the data for. Then, we constructed the API endpoint with the endpoint path and the organization ID. Finally, we used the fetch API to make a GET request to the endpoint and included the API key in the Authorization header.
-
-// In the then statements, we convert the response from JSON to JavaScript Object format and log it to the console. We also added a catch statement to log any errors that may occur.
-
-
-
-        {/* API Resourses:
-
-    -- https://api.rescuegroups.org/v5/public/docs // no API keys provided for now, pending for the devs team to reply */}
