@@ -25,7 +25,6 @@ The information about the clinic's doctors and services is fetched from [this fi
     <li>React Hook Form: Library for managing form state and validation in React</li>
     <li>React Datepicker: A simple and reusable datepicker component for React</li>
     <li>React Framer Motion: An open source motion library for React, made by Framer</li>
-    <li>React Datepicker: A simple and reusable datepicker component for React</li>
 </ul>
 
 
